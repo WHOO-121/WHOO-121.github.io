@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>个人博客 | 代码仓库与课程</title>
-    <meta name="description" content="个人博客、代码仓库、课程学习与项目记录。" />
+    <title>WHOO-121 | 个人博客</title>
+    <meta name="description" content="WHOO-121 的个人博客、代码仓库、课程学习与项目记录。" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
+    <div class="ambient" aria-hidden="true"></div>
     <header class="topbar">
       <a class="brand" href="#home" aria-label="返回首页">
-        <span class="brand-mark">C</span>
-        <span>Code Notes</span>
+        <span class="brand-mark">W</span>
+        <span>WHOO-121</span>
       </a>
       <nav class="nav" aria-label="主导航">
         <a href="#repositories">仓库</a>
@@ -23,50 +24,66 @@
     <main>
       <section id="home" class="hero section">
         <div class="hero-copy">
-          <p class="eyebrow">Personal Lab</p>
-          <h1>一个安静、清晰、持续生长的个人技术博客。</h1>
-          <p class="lead">这里用来整理代码仓库、课程学习、实验结果和研究笔记。页面保持轻量，内容优先，适合长期维护。</p>
+          <p class="eyebrow">AI Research / Code / Learning</p>
+          <h1>构建自己的技术档案馆。</h1>
+          <p class="lead">我在这里整理中药质量评价、深度学习实验、课程路线和代码项目。它不是展示橱窗，而是一块持续运行的个人工作台。</p>
           <div class="hero-actions">
-            <a class="button primary" href="#repositories">查看仓库</a>
-            <a class="button" href="#courses">查看课程</a>
+            <a class="button primary" href="#repositories">进入仓库</a>
+            <a class="button" href="#courses">课程路线</a>
+          </div>
+          <div class="metric-row" aria-label="站点概览">
+            <div><strong>03</strong><span>核心仓库</span></div>
+            <div><strong>AI</strong><span>研究方向</span></div>
+            <div><strong>24/7</strong><span>持续记录</span></div>
           </div>
         </div>
-        <aside class="profile-panel" aria-label="个人概览">
-          <div>
-            <span class="label">当前方向</span>
-            <strong>AI + 中药质量评价</strong>
+
+        <aside class="console-panel" aria-label="个人概览">
+          <div class="console-head">
+            <span></span><span></span><span></span>
           </div>
-          <div>
-            <span class="label">项目状态</span>
-            <strong>持续迭代</strong>
-          </div>
-          <div>
-            <span class="label">GitHub</span>
-            <a id="githubProfile" href="#" target="_blank" rel="noreferrer">设置你的主页链接</a>
+          <div class="console-body">
+            <p class="terminal-line"><span>$</span> whoami</p>
+            <h2>WHOO-121</h2>
+            <p>AI + 中药质量评价方向，关注图像识别、多模态融合、模型训练与可视化系统。</p>
+            <div class="signal-list">
+              <div><span>Focus</span><strong>Herb Quality AI</strong></div>
+              <div><span>Status</span><strong>Iterating</strong></div>
+              <div><span>GitHub</span><a id="githubProfile" href="#" target="_blank" rel="noreferrer">github.com/WHOO-121</a></div>
+            </div>
           </div>
         </aside>
       </section>
 
       <section id="repositories" class="section">
         <div class="section-head">
-          <p class="eyebrow">Repositories</p>
-          <h2>代码仓库</h2>
+          <div>
+            <p class="eyebrow">Repositories</p>
+            <h2>代码仓库</h2>
+          </div>
+          <p>把项目、实验和工具沉淀成可追踪的资产。</p>
         </div>
         <div id="repoGrid" class="grid"></div>
       </section>
 
       <section id="courses" class="section band">
         <div class="section-head">
-          <p class="eyebrow">Courses</p>
-          <h2>课程与学习路线</h2>
+          <div>
+            <p class="eyebrow">Courses</p>
+            <h2>课程与学习路线</h2>
+          </div>
+          <p>从基础模型到多模态研究，按阶段积累。</p>
         </div>
         <div id="courseList" class="course-list"></div>
       </section>
 
       <section id="journal" class="section">
         <div class="section-head">
-          <p class="eyebrow">Journal</p>
-          <h2>近期记录</h2>
+          <div>
+            <p class="eyebrow">Journal</p>
+            <h2>近期记录</h2>
+          </div>
+          <p>保留每一次迭代留下的线索。</p>
         </div>
         <div id="journalList" class="timeline"></div>
       </section>
