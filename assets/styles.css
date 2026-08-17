@@ -207,6 +207,8 @@ h2 { font-size: clamp(28px, 4vw, 46px); line-height: 1.08; margin-bottom: 0; }
 .course-item h3 { margin: 0 0 4px; font-size: 18px; }
 .course-item p { margin: 0; color: var(--muted); }
 .status { color: var(--hot); font-weight: 900; white-space: nowrap; }
+.course-link { display: inline-flex; margin-top: 12px; color: var(--accent); font-weight: 900; }
+.course-link:hover { color: var(--hot); }
 .timeline { display: grid; gap: 12px; }
 .timeline-item { padding: 18px 20px; border-left: 3px solid var(--accent); }
 .timeline-item time { color: var(--accent); font-weight: 900; font-size: 13px; }
@@ -223,3 +225,4 @@ h2 { font-size: clamp(28px, 4vw, 46px); line-height: 1.08; margin-bottom: 0; }
   .course-item, .section-head { grid-template-columns: 1fr; align-items: start; }
   .metric-row { grid-template-columns: 1fr; }
 }
+

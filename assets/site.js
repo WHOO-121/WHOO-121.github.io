@@ -22,6 +22,12 @@
   ],
   courses: [
     {
+      title: "B站机器学习收藏夹",
+      summary: "集中整理机器学习相关视频课程与学习资料，作为算法基础、模型训练和项目实践的外部课程入口。",
+      status: "收藏夹",
+      url: "https://space.bilibili.com/67994698/favlist?fid=4046212098&ftype=create&spm_id_from=333.1007.0.0"
+    },
+    {
       title: "深度学习基础",
       summary: "神经网络、CNN、训练技巧、实验记录与模型评估。",
       status: "学习中"
@@ -38,6 +44,11 @@
     }
   ],
   journal: [
+    {
+      date: "2026-08-17",
+      title: "接入 B 站机器学习收藏夹",
+      summary: "在课程区加入机器学习收藏夹入口，方便从博客快速跳转到外部视频学习资料。"
+    },
     {
       date: "2026-08-17",
       title: "博客初始版本完成",
@@ -71,6 +82,7 @@ courseList.innerHTML = site.courses.map(course => `
     <div>
       <h3>${course.title}</h3>
       <p>${course.summary}</p>
+      ${course.url ? `<a class="course-link" href="${course.url}" target="_blank" rel="noreferrer">打开收藏夹</a>` : ""}
     </div>
     <span class="status">${course.status}</span>
   </article>
