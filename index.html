@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人博客 | 代码仓库与课程</title>
+    <meta name="description" content="个人博客、代码仓库、课程学习与项目记录。" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="返回首页">
+        <span class="brand-mark">C</span>
+        <span>Code Notes</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#repositories">仓库</a>
+        <a href="#courses">课程</a>
+        <a href="#journal">记录</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal Lab</p>
+          <h1>一个安静、清晰、持续生长的个人技术博客。</h1>
+          <p class="lead">这里用来整理代码仓库、课程学习、实验结果和研究笔记。页面保持轻量，内容优先，适合长期维护。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#repositories">查看仓库</a>
+            <a class="button" href="#courses">查看课程</a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="个人概览">
+          <div>
+            <span class="label">当前方向</span>
+            <strong>AI + 中药质量评价</strong>
+          </div>
+          <div>
+            <span class="label">项目状态</span>
+            <strong>持续迭代</strong>
+          </div>
+          <div>
+            <span class="label">GitHub</span>
+            <a id="githubProfile" href="#" target="_blank" rel="noreferrer">设置你的主页链接</a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="repositories" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Repositories</p>
+          <h2>代码仓库</h2>
+        </div>
+        <div id="repoGrid" class="grid"></div>
+      </section>
+
+      <section id="courses" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">Courses</p>
+          <h2>课程与学习路线</h2>
+        </div>
+        <div id="courseList" class="course-list"></div>
+      </section>
+
+      <section id="journal" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Journal</p>
+          <h2>近期记录</h2>
+        </div>
+        <div id="journalList" class="timeline"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Built for GitHub Pages.</span>
+      <a href="#home">回到顶部</a>
+    </footer>
+
+    <script src="assets/site.js"></script>
+  </body>
+</html>
